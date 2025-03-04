@@ -524,6 +524,67 @@ button.button-4 .text {
     padding-bottom: 8px;
   }
 
+
+/* CSS */
+.button-32 {
+    padding: 12px 26px;
+    color: #fff;
+    border: 0;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 150ms ease-in-out;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    border-radius: 10px;
+    background-color: #111111;
+    background-image: radial-gradient(76% 151% at 52% -52%, rgba(255, 255, 255, 0.23) 0%, transparent 100%);
+  }
+  
+  .button-32:hover {
+    filter: brightness(1.1);
+  }
+  
+  .button-32:active {
+    transform: scale(.95);
+  }
+
+
+  /* CSS */
+.button-54 {
+    --c: #fff;
+    /* text color */
+    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+      #004dff;
+    /* background color */
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+    text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+      calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+  }
+  
+  .button-54:hover,
+  .button-54:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+  }
+  
+  .button-54:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+  }
+  
+  .button-54 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+    padding: .1em .3em;
+  }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
