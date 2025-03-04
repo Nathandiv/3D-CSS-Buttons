@@ -274,8 +274,255 @@ button.button-10 {
     box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
     transform: translate3d(0, 0, -1em);
   }
+
+  
+  /* CSS */
+button.button-4,
+button.button-4:before,
+button.button-4:after {
+  box-sizing: border-box;
+}
+
+button.button-4 {
+  touch-action: manipulation;
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: block;
+  height: 60px;
+  width: 175px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0 auto;
+  border-radius: 10px;
+  top: 0;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -ms-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+button.button-4 {
+  touch-action: manipulation;
+  -webkit-transform: perspective(500px) rotateX(35deg);
+}
+
+button.button-4:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background: #f25d30;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f25d30), color-stop(100%, #e03b00));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f25d30 0%, #e03b00 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f25d30", endColorstr="#e03b00",GradientType=0 );
+  /* IE6-9 */
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.3);
+}
+
+button.button-4:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 1px;
+  height: 15px;
+  width: 173px;
+  background: #ba2500;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ba2500), color-stop(100%, #9b3100));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ba2500 0%, #9b3100 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ba2500", endColorstr="#9b3100",GradientType=0 );
+  /* IE6-9 */
+  border-radius: 0 0 5px 5px;
+  -webkit-transform: perspective(500px) rotateX(-40deg);
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.5), 0 3px 2px -1px black;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -ms-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+button.button-4:hover {
+  top: -3px;
+}
+
+button.button-4:hover:after {
+  height: 18.5px;
+  bottom: -13px;
+}
+
+button.button-4:active {
+  top: 0px;
+}
+
+button.button-4:active:after {
+  height: 15px;
+  bottom: -10px;
+}
+
+button.button-4 .text {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+/* CSS */
+.button-16 {
+    touch-action: manipulation;
+    all: unset;
+    position: relative;
+    border-radius: 50px;
+    padding: 16px 24px;
+    background-color: #f0f7fa;
+    box-shadow: inset 0 -4px 8px #87bfd8, 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #0470e3;
+    transition: transform 0.4s cubic-bezier(0.55, 1, 0.15, 1);
+    will-change: transform;
+  }
+  .button-16:active {
+    transform: scale(0.92);
+  }
+  .button-16:active::after {
+    opacity: 1;
+  }
+  .button-16::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-image-source: url("https://csspro.com/css-3d-buttons/buttons-img/mario-button-borders.webp");
+    border-image-slice: 50%;
+    border-image-width: 40px;
+    border-style: solid;
+    transform: scale(1.04, 1.08);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.55, 1, 0.15, 1);
+    will-change: transform;
+  }
+  .button-16:focus-visible::after {
+    opacity: 1;
+    animation: pulsate-16 1s infinite;
+  }
+  
+  @keyframes pulsate-16 {
+    0% {
+      transform: scale(1.04, 1.08);
+    }
+    50% {
+      transform: scale(1.08, 1.12);
+    }
+    100% {
+      transform: scale(1.04, 1.08);
+    }
+  }
   
   
+
+  /* CSS */
+.button-19 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13)), radial-gradient(90% 7% at 50% 8%, rgba(255, 255, 255, 0.47) 25%, rgba(255, 255, 255, 0) 50%), #0053d0;
+    border: 0;
+    border-radius: 0.375em;
+    box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.47), 0 -0.1em 0 0.1em rgba(0, 0, 0, 0.27), 0 0.1em 0 0.1em rgba(255, 255, 255, 0.27), -0.2em 0 0.2em #003f9d inset, 0 0.2em 0.2em rgba(255, 255, 255, 0.27) inset, 0.2em 0 0.2em rgba(255, 255, 255, 0.27) inset, 0 -0.2em 0.2em #003f9d inset;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0.75em 1em;
+    text-shadow: 0 0 0.2em rgba(255, 255, 255, 0.47);
+    transition-property: box-shadow;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .button-19, .button-19 span {
+    display: block;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+  }
+  .button-19:focus, .button-19 span:focus {
+    outline: none;
+  }
+  .button-19 span {
+    transition-property: transform;
+    will-change: transform;
+  }
+  .button-19:active {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.47), 0 -0.1em 0 0.1em rgba(0, 0, 0, 0.27), 0 0.1em 0 0.1em rgba(255, 255, 255, 0.27), -0.2em 0 0.2em #002a6a inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.27) inset, 0.2em 0 0.2em rgba(0, 0, 0, 0.27) inset, 0 -0.2em 0.2em #002a6a inset;
+  }
+  .button-19:active span {
+    transform: scale(0.95);
+  }
+  .button-19:focus {
+    color: #9dc4ff;
+    text-shadow: 0 0 0.2em rgba(157, 196, 255, 0.47);
+  }
+
+/* CSS */
+.button-28 {
+    background: #7fd12f;
+    border: 1px solid #629921;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 #8ff339;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    outline: 0;
+    padding: 10px 35px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #629921;
+    background: linear-gradient(to bottom, #7fd12f 0%, #629921 100%);
+    transition: padding 50ms ease-in-out, border-top-width 50ms ease-in-out, box-shadow 150ms ease-in-out;
+  }
+  .button-28:hover {
+    background: #88d602;
+    background: linear-gradient(to bottom, #88d602 0%, #66a023 100%);
+    box-shadow: inset 0 1px 0 #8ff339, 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  .button-28:active {
+    border-top-width: 2px;
+    box-shadow: none;
+    padding-bottom: 8px;
+  }
 
 .parent {
     display: grid;
